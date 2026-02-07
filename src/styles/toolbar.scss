@@ -1,0 +1,65 @@
+@use './variables.scss' as *;
+
+.toolbar {
+    height: $toolbar-height;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    box-shadow: 0 4px 5px gray;
+    z-index: 999;
+
+    &__btn {
+        height: 25px;
+        width: 25px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-size: contain;
+        background-color: transparent;
+        background-repeat: no-repeat;
+    }
+
+    .brush {
+        background-image: url('../assets/slih.svg');
+    }
+
+    .Box {
+        background-image: url('../assets/box.svg');
+    }
+
+    .last {
+        background-image: url('../assets/last.png');
+    }
+
+    .around {
+        background-image: url('../assets/around.png');
+    }
+
+    .left {
+        background-image: url('../assets/left.png');
+        margin-left: auto;
+    }
+
+    .right {
+        background-image: url('../assets/left.png');
+        transform: rotate(180deg);
+    }
+
+    .save {
+        background-image: url('../assets/save.png');
+        margin-right: 0.2rem;
+    }
+}
+
+.setting-bar {
+    height: $toolbar-height;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    box-shadow: 0 4px 5px gray;
+    top: $toolbar-height;
+}
